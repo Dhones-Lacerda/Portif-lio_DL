@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
     <title>Dhones Lacerda</title>
 </head>
 <body>
     <nav class="navegacao">
         <ul class="menu-list">
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#contato">Contato</a></li>
+            <li><a class="menu-link" href="#inicio">Início</a></li>
+            <li><a class="menu-link" href="#sobre">Sobre</a></li>
+            <li><a class="menu-link" href="#projetos">Projetos</a></li>
+            <li><a class="menu-link" href="#contato">Contato</a></li>
         </ul>
     </nav>
 
@@ -19,7 +20,7 @@
         <div>
             <img src="./img/dhones.jpg" alt="Foto de Dhones Lacerda" class="foto-perfil">
             <h1>Dhones Lacerda</h1>
-            <p>Desenvolvedor Full Stack</p>
+            <p class="cabecalho-sub-titulo">Desenvolvedor Full Stack</p>
         </div>
     </main>
 
@@ -27,6 +28,32 @@
         <h2 class="sobre-titulo">Sobre</h2>
         <div class="sobre-conteiner">
             <p>"Olá! Sou o Dhones, estudante de Sistemas de Informação no IFBA e alguém que acredita que a tecnologia é, antes de tudo, uma ferramenta para resolver problemas reais. Minha trajetória no desenvolvimento começou com a curiosidade de entender como as coisas funcionam por trás das telas, o que me levou à Residência RESTIC 36. Lá, tive a chance de aprender na prática com pessoas incríveis, e juntos conquistamos o 3º lugar em um Hackathon com o projeto SASI. Hoje, divido meu tempo entre os estudos acadêmicos e o desafio de construir aplicações Full Stack, sempre buscando aprender algo novo a cada linha de código ou container configurado."</p>
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo">Meus projetos</h2>
+        <div class="projetos-conteiner">
+            <div class="projeto-card">
+                <img src="./img/Design sem nome.svg" alt="logo do projeto SASI" class="projeto-imagem">
+                <h3>Projeto 1: SASI - Sistema de Analise em Saúde Integrada</h3>
+                <p>"O SASI é Plataforma desenvolvida para otimizar a gestão de saúde através da análise inteligente de dados. O sistema foca em integrar diferentes fontes de informação para fornecer uma visão clara e analítica, auxiliando na tomada de decisões estratégicas. O projeto foi destaque na Residência RESTIC 36, conquistando o 3º lugar no Hackathon 'Tecnologia que Transforma' pela sua capacidade de inovação e potencial de impacto social."</p>
+            </div>
+            <!-- Adicione mais projetos aqui -->
+        </div>
+    </section>
+
+    <section id="Contatos" class="Contatos">
+        <h2 class="contatos-titulo">Contato</h2>
+        <div class="Contatos-conteiner">
+            <form class="form-contato" id="form">
+                <div class="group-form">
+                    <input placeholder="nome" class="camp-form"> 
+                </div>
+                <div class="">    
+                    <textarea class="text-form" placeholder="Digite sua mensagem aqui..." id=""></textarea>
+                </div>
+            </form>
         </div>
     </section>
 </body>
