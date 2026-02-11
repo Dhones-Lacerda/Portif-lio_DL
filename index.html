@@ -9,12 +9,15 @@
 </head>
 
 <body>
+
+    <div class="particulas"></div>
+
     <nav class="navegacao">
         <ul class="menu-list">
             <li><a class="menu-link" href="#inicio">Início</a></li>
             <li><a class="menu-link" href="#sobre">Sobre</a></li>
             <li><a class="menu-link" href="#projetos">Projetos</a></li>
-            <li><a class="menu-link" href="#contato">Contato</a></li>
+            <li><a class="menu-link" href="#contatos">Contato</a></li>
         </ul>
     </nav>
 
@@ -82,21 +85,26 @@
         </div>
     </section>
 
-    <section id="Contatos" class="Contatos">
+    <section id="contatos" class="Contatos">
         <h2 class="contatos-titulo">Entre em contato</h2>
         <div class="Contatos-conteiner">
-            <form class="form-contato" id="form">
+            <form class="form-contato" id="form" onsubmit="sendWhats(event)">
                 <div class="group-form">
-                    <input placeholder="nome" class="camp-form">
+                    <input placeholder="Nome" class="camp-form" id="nome">
                 </div>
                 <div class="group-form">
-                    <textarea class="camp-form" placeholder="Digite sua mensagem aqui..." id=""></textarea>
+                    <input type="tel" placeholder="Telefone" class="camp-form" id="telefone">
+                </div>
+                <div class="group-form">
+                    <textarea class="camp-form" placeholder="Digite sua mensagem aqui..." rows="4" id="mensagem"></textarea>
                 </div>
 
                 <button type="submit" class="botao-form">Enviar Whatsapp</button>
             </form>
         </div>
     </section>
+
+    <script src="js/whatsapp.js"></script>
 </body>
 
 </html>
